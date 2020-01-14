@@ -29,7 +29,7 @@ namespace Figures
         }
 
         /// <summary>
-        /// <inheritdoc cref="Figure"/>
+        /// <inheritdoc cref="Figure.Area"/>
         /// </summary>
         public override double Area => Math.PI * Radius * Radius;
     }

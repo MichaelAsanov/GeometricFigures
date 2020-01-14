@@ -19,9 +19,9 @@ namespace Figures
         /// <summary>
         /// Проверка, что все стороны неотрицательны
         /// </summary>
-        /// <param name="a"></param>
-        /// <param name="b"></param>
-        /// <param name="c"></param>
+        /// <param name="a">Первая сторона</param>
+        /// <param name="b">Вторая сторона</param>
+        /// <param name="c">Третья сторона</param>
         /// <exception cref="NegativeArgumentException"></exception>
         private void CheckAllSidesAreNonNegative(double a, double b, double c)
         {
@@ -75,12 +75,41 @@ namespace Figures
         public double C { get; }
 
         /// <summary>
-        /// <inheritdoc cref="Figure"/>
+        /// <inheritdoc cref="Figure.Area"/>
         /// </summary>
         public override double Area
         {
             //Вычисляем площадь по формуле Герона
             get { return 0.25 * Math.Sqrt((A + B + C) * (A + B - C) * (A - B + C) * (-A + B + C)); }
+        }
+
+        /// <summary>
+        /// Не вырождается ли наш треугольник в точку?
+        /// </summary>
+        private bool IsPoint => A == 0 && B == 0 && C == 0;
+
+        /// <summary>
+        /// Не вырождается ли наш треугольник в отрезок?
+        /// </summary>
+        private bool IsLine
+        {
+            get { return !IsPoint && (A == B + C || B == A + C || C == A + B); }
+        }
+        
+        /// <summary>
+        /// Прямоугольный ли треугольник
+        /// </summary>
+        public bool IsRectangular
+        {
+            get
+            {
+                //Проверяем прямоугольность по обратной теореме Пифагора
+                double a_2 = A * A;
+                double b_2 = B * B;
+                double c_2 = C * C;
+                
+                return !IsPoint && !IsLine && (a_2 == b_2 + c_2 || b_2 == a_2 + c_2 || c_2 == a_2 + b_2);
+            }
         }
     }
 }

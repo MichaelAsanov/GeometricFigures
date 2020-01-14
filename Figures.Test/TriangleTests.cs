@@ -220,5 +220,75 @@ namespace Figures.Test
             
             Assert.AreEqual(0, triangle.Area, 0.001);
         }
+
+        /// <summary>
+        /// Проверяет, что треугольник прямоугольный
+        /// </summary>
+        [Test]
+        public void TriangeIsRectangular1_Test()
+        {
+            var triangle = new Triangle(3, 4, 5);
+            Assert.IsTrue(triangle.IsRectangular);
+        }
+        
+        /// <summary>
+        /// Проверяет, что треугольник прямоугольный
+        /// </summary>
+        [Test]
+        public void TriangeIsRectangular2_Test()
+        {
+            var triangle = new Triangle(3, 5, 4);
+            Assert.IsTrue(triangle.IsRectangular);
+        }
+        
+        /// <summary>
+        /// Проверяет, что треугольник прямоугольный
+        /// </summary>
+        [Test]
+        public void TriangeIsRectangular3_Test()
+        {
+            var triangle = new Triangle(5, 3, 4);
+            Assert.IsTrue(triangle.IsRectangular);
+        }
+        
+        /// <summary>
+        /// Проверяет, что треугольник не прямоугольный
+        /// </summary>
+        [Test]
+        public void TriangeIsNotRectangular3_Test()
+        {
+            var triangle = new Triangle(1, 1, 1);
+            Assert.IsFalse(triangle.IsRectangular);
+        }
+
+        /// <summary>
+        /// Этот треугольник - вырождается в отрезок, и прямоугольным быть не должен, хотя для него обратная теорема Пифагора выполняется... 
+        /// </summary>
+        [Test]
+        public void TriangleIsLineAndNotRectangular1()
+        {
+            var triangle = new Triangle(1, 0, 1);
+            Assert.IsFalse(triangle.IsRectangular);
+        }
+        
+        /// <summary>
+        /// Этот треугольник - вырождается в отрезок, и прямоугольным быть не должен, хотя для него обратная теорема Пифагора выполняется... 
+        /// </summary>
+        [Test]
+        public void TriangleIsLineAndNotRectangular2()
+        {
+            var triangle = new Triangle(1, 2, 3);
+            Assert.IsFalse(triangle.IsRectangular);
+        }
+        
+        /// <summary>
+        /// Этот треугольник - вырождается в точку, и прямоугольным быть не должен, хотя для него обратная теорема Пифагора выполняется... 
+        /// </summary>
+        [Test]
+        public void TriangleIsPointAndNotRectangular()
+        {
+            var triangle = new Triangle(0, 0, 0);
+            Assert.IsFalse(triangle.IsRectangular);
+        }
     }
 }
