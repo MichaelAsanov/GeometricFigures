@@ -198,7 +198,7 @@ namespace Figures.Test
         /// <summary>
         /// Тестирует площадь треугольника;
         /// Треугольник вырожден в отрезок;
-        /// Ожидаем, что его полщадь равна нулю
+        /// Ожидаем, что его площадь равна нулю
         /// </summary>
         [Test]
         public void Area_TriangleDegeneratedToLine_Test()
@@ -211,7 +211,7 @@ namespace Figures.Test
         /// <summary>
         /// Тестирует площадь треугольника;
         /// Треугольник вырожден в точку;
-        /// Ожидаем, что его полщадь равна нулю
+        /// Ожидаем, что его площадь равна нулю
         /// </summary>
         [Test]
         public void Area_TriangleDegeneratedToPoint_Test()
