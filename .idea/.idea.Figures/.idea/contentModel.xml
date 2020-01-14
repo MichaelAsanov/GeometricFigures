@@ -16,7 +16,7 @@
         <e p="Circle.cs" t="Include" />
         <e p="Exceptions" t="Include">
           <e p="NegativeArgumentException.cs" t="Include" />
-          <e p="TriangleInequalityException.cs" t="Include" />
+          <e p="TriangleInequalityNoncomlianceException.cs" t="Include" />
         </e>
         <e p="Figure.cs" t="Include" />
         <e p="Figures.csproj" t="IncludeRecursive" />

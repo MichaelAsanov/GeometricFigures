@@ -50,7 +50,7 @@ namespace Figures
             
             if (noncompliance1 || noncompliance2 || noncompliance3)
             {
-                throw new NegativeArgumentException($"Нарушение неравенства треугольника: " +
+                throw new TriangleInequalityNoncomlianceException($"Нарушение неравенства треугольника: " +
                                                     (noncompliance1 ? $"{nameof(a)} > {nameof(b)} + {nameof(c)}. " : string.Empty) +
                                                     (noncompliance2 ? $"{nameof(b)} > {nameof(a)} + {nameof(c)}. " : string.Empty) +
                                                     (noncompliance3 ? $"{nameof(c)} > {nameof(a)} + {nameof(b)}. " : string.Empty) +

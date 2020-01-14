@@ -135,7 +135,7 @@ namespace Figures.Test
         [Test]
         public void ConstructorTest_TriangleInequalityNonCompliance1_Exception()
         {
-            var exception = Assert.Throws<NegativeArgumentException>(() =>
+            var exception = Assert.Throws<TriangleInequalityNoncomlianceException>(() =>
             {
                 var triangle = new Triangle(3, 1, 1);
             });
@@ -149,7 +149,7 @@ namespace Figures.Test
         [Test]
         public void ConstructorTest_TriangleInequalityNonCompliance2_Exception()
         {
-            var exception = Assert.Throws<NegativeArgumentException>(() =>
+            var exception = Assert.Throws<TriangleInequalityNoncomlianceException>(() =>
             {
                 var triangle = new Triangle(1, 3, 1);
             });
@@ -163,7 +163,7 @@ namespace Figures.Test
         [Test]
         public void ConstructorTest_TriangleInequalityNonCompliance3_Exception()
         {
-            var exception = Assert.Throws<NegativeArgumentException>(() =>
+            var exception = Assert.Throws<TriangleInequalityNoncomlianceException>(() =>
             {
                 var triangle = new Triangle(1, 1, 3);
             });
