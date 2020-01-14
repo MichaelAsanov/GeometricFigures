@@ -1,4 +1,5 @@
 using System;
+using Figures.Exceptions;
 using NUnit.Framework;
 
 namespace Figures.Test
@@ -44,12 +45,12 @@ namespace Figures.Test
         [Test]
         public void ConstructorTest_NegativeRadius_Exception()
         {
-            var exception = Assert.Throws<ArgumentException>(() =>
+            var exception = Assert.Throws<NegativeArgumentException>(() =>
             {
                 var circle = new Circle(-1);
             });
             
-            Assert.AreEqual("Радиус окружности не может быть отрицательным", exception.Message);
+            Assert.AreEqual("Радиус круга не может быть отрицательным", exception.Message);
         }
         
         /// <summary>

@@ -1,4 +1,5 @@
 ﻿using System;
+using Figures.Exceptions;
 
 namespace Figures
 {
@@ -11,7 +12,11 @@ namespace Figures
         {
             if (a < 0 || b < 0 || c < 0)
             {
-                throw new ArgumentException($"Сторона треугольника не может быть отрицатеьлной");
+                throw new NegativeArgumentException($"Переданы отрицательные стороны: " +
+                                                    (a < 0 ? $"{nameof(a)} = {a}. " : string.Empty) +
+                                                    (b < 0 ? $"{nameof(b)} = {b}. " : string.Empty) +
+                                                    (c < 0 ? $"{nameof(c)} = {c}. " : string.Empty) +
+                                                    $"Стороны треугольника не могут быть отрицательными");
             }
 
             (A, B, C) = (a, b, c);
@@ -45,6 +50,7 @@ namespace Figures
         /// </summary>
         public override double Area
         {
+            //Вычисляем площадь по формуле Герона
             get { return 0.25 * Math.Sqrt((A + B + C) * (A + B - C) * (A - B + C) * (-A + B + C)); }
         }
     }

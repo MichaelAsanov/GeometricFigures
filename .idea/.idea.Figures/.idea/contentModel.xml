@@ -14,6 +14,10 @@
       <e p="Figures" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Circle.cs" t="Include" />
+        <e p="Exceptions" t="Include">
+          <e p="NegativeArgumentException.cs" t="Include" />
+          <e p="TriangleInequalityException.cs" t="Include" />
+        </e>
         <e p="Figure.cs" t="Include" />
         <e p="Figures.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">

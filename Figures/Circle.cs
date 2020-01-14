@@ -1,4 +1,5 @@
 ﻿using System;
+using Figures.Exceptions;
 
 namespace Figures
 {
@@ -21,7 +22,7 @@ namespace Figures
         {
             if (radius < 0)
             {
-                throw new ArgumentException("Радиус окружности не может быть отрицательным");
+                throw new NegativeArgumentException("Радиус круга не может быть отрицательным");
             }
             
             Radius = radius;
