@@ -8,6 +8,6 @@
         /// <summary>
         /// Площадь фигуры
         /// </summary>
-        public abstract double Area { get; set; }
+        public abstract double Area { get; }
     }
 }

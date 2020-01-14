@@ -2,13 +2,8 @@ using NUnit.Framework;
 
 namespace Figures.Test
 {
-    public class Tests
+    public class CircleTests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test]
         public void Test1()
         {
