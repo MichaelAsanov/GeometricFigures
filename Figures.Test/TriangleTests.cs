@@ -66,5 +66,65 @@ namespace Figures.Test
             });
             Assert.AreEqual("Переданы отрицательные стороны: c = -1. Стороны треугольника не могут быть отрицательными", exception.Message);
         }
+        
+        /// <summary>
+        /// Тестирует конструктор;
+        /// Некоторые стороны отрицательные;
+        /// Ожидаем, что произошло исключение
+        /// </summary>
+        [Test]
+        public void ConstructorTest_ThereAreNegativeSides4_Exception()
+        {
+            var exception = Assert.Throws<NegativeArgumentException>(() =>
+            {
+                var triangle = new Triangle(-1, -1, 1);
+            });
+            Assert.AreEqual("Переданы отрицательные стороны: a = -1. b = -1. Стороны треугольника не могут быть отрицательными", exception.Message);
+        }
+        
+        /// <summary>
+        /// Тестирует конструктор;
+        /// Некоторые стороны отрицательные;
+        /// Ожидаем, что произошло исключение
+        /// </summary>
+        [Test]
+        public void ConstructorTest_ThereAreNegativeSides5_Exception()
+        {
+            var exception = Assert.Throws<NegativeArgumentException>(() =>
+            {
+                var triangle = new Triangle(-1, 1, -1);
+            });
+            Assert.AreEqual("Переданы отрицательные стороны: a = -1. c = -1. Стороны треугольника не могут быть отрицательными", exception.Message);
+        }
+        
+        /// <summary>
+        /// Тестирует конструктор;
+        /// Некоторые стороны отрицательные;
+        /// Ожидаем, что произошло исключение
+        /// </summary>
+        [Test]
+        public void ConstructorTest_ThereAreNegativeSides6_Exception()
+        {
+            var exception = Assert.Throws<NegativeArgumentException>(() =>
+            {
+                var triangle = new Triangle(1, -1, -1);
+            });
+            Assert.AreEqual("Переданы отрицательные стороны: b = -1. c = -1. Стороны треугольника не могут быть отрицательными", exception.Message);
+        }
+        
+        /// <summary>
+        /// Тестирует конструктор;
+        /// Все стороны отрицательные;
+        /// Ожидаем, что произошло исключение
+        /// </summary>
+        [Test]
+        public void ConstructorTest_ThereAreNegativeSides7_Exception()
+        {
+            var exception = Assert.Throws<NegativeArgumentException>(() =>
+            {
+                var triangle = new Triangle(-1, -1, -1);
+            });
+            Assert.AreEqual("Переданы отрицательные стороны: a = -1. b = -1. c = -1. Стороны треугольника не могут быть отрицательными", exception.Message);
+        }
     }
 }
