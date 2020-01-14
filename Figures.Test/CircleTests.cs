@@ -24,6 +24,20 @@ namespace Figures.Test
         
         /// <summary>
         /// Тестирует конструктор;
+        /// Передаем нулевой радиус;
+        /// Ожидаем, что прошло успешно
+        /// </summary>
+        [Test]
+        public void ConstructorTest_ZeroRadius_Success()
+        {
+            Assert.DoesNotThrow(() =>
+            {
+                var circle = new Circle(0);
+            });
+        }
+        
+        /// <summary>
+        /// Тестирует конструктор;
         /// Передаем отрицательный радиус;
         /// Ожидаем, что произошло исключение
         /// </summary>
