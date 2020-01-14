@@ -25,9 +25,18 @@ namespace Figures
 
         private void CheckExistsByTriangleInequality(double a, double b, double c)
         {
-            if (a > b + c)
+            bool noncompliance1 = a > b + c;
+            bool noncompliance2 = b > a + c;
+            bool noncompliance3 = c > a + b;
+            
+            if (noncompliance1 || noncompliance2 || noncompliance3)
             {
-                
+                throw new NegativeArgumentException($"Нарушение неравенства треугольника: " +
+                                                    (noncompliance1 ? $"{nameof(a)} > {nameof(b)} + {nameof(c)}. " : string.Empty) +
+                                                    (noncompliance2 ? $"{nameof(b)} > {nameof(a)} + {nameof(c)}. " : string.Empty) +
+                                                    (noncompliance3 ? $"{nameof(c)} > {nameof(a)} + {nameof(b)}. " : string.Empty) +
+                                                    "Каждая сторона треугольника должна быть меньше суммы двух других сторон." 
+                                                   );
             }
         }
         

@@ -129,6 +129,48 @@ namespace Figures.Test
         }
 
         /// <summary>
+        /// Нарушение неравенства треугольника;
+        /// Ожидаем, что произошло исключение
+        /// </summary>
+        [Test]
+        public void ConstructorTest_TriangleInequalityNonCompliance1_Exception()
+        {
+            var exception = Assert.Throws<NegativeArgumentException>(() =>
+            {
+                var triangle = new Triangle(3, 1, 1);
+            });
+            Assert.AreEqual("Нарушение неравенства треугольника: a > b + c. Каждая сторона треугольника должна быть меньше суммы двух других сторон.", exception.Message);
+        }
+        
+        /// <summary>
+        /// Нарушение неравенства треугольника;
+        /// Ожидаем, что произошло исключение
+        /// </summary>
+        [Test]
+        public void ConstructorTest_TriangleInequalityNonCompliance2_Exception()
+        {
+            var exception = Assert.Throws<NegativeArgumentException>(() =>
+            {
+                var triangle = new Triangle(1, 3, 1);
+            });
+            Assert.AreEqual("Нарушение неравенства треугольника: b > a + c. Каждая сторона треугольника должна быть меньше суммы двух других сторон.", exception.Message);
+        }
+        
+        /// <summary>
+        /// Нарушение неравенства треугольника;
+        /// Ожидаем, что произошло исключение
+        /// </summary>
+        [Test]
+        public void ConstructorTest_TriangleInequalityNonCompliance3_Exception()
+        {
+            var exception = Assert.Throws<NegativeArgumentException>(() =>
+            {
+                var triangle = new Triangle(1, 1, 3);
+            });
+            Assert.AreEqual("Нарушение неравенства треугольника: c > a + b. Каждая сторона треугольника должна быть меньше суммы двух других сторон.", exception.Message);
+        }
+        
+        /// <summary>
         /// Тестирует стороны треугольника
         /// </summary>
         [Test]
