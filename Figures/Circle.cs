@@ -10,7 +10,7 @@ namespace Figures
         /// <summary>
         /// Радиус
         /// </summary>
-        public double Radius { get; set; }
+        public double Radius { get; }
 
         public Circle(double radius)
         {

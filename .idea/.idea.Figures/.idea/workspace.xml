@@ -19,8 +19,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Figures.Test/UnitTest1.cs" />
-        <option value="$PROJECT_DIR$/Figures/Circle.cs" />
         <option value="$PROJECT_DIR$/Figures/Figure.cs" />
+        <option value="$PROJECT_DIR$/Figures/Circle.cs" />
         <option value="$PROJECT_DIR$/Figures.Test/CircleTests.cs" />
       </list>
     </option>
@@ -59,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579017864305</updated>
-      <workItem from="1579017866391" duration="3333000" />
+      <workItem from="1579017866391" duration="3784000" />
     </task>
     <servers />
   </component>

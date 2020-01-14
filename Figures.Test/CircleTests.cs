@@ -44,10 +44,36 @@ namespace Figures.Test
         [Test]
         public void ConstructorTest_NegativeRadius_Exception()
         {
-            Assert.Throws<ArgumentException>(() =>
+            var exception = Assert.Throws<ArgumentException>(() =>
             {
                 var circle = new Circle(-1);
             });
+            
+            Assert.AreEqual("Радиус окружности не может быть отрицательным", exception.Message);
+        }
+        
+        /// <summary>
+        /// Тестирует радиус и площадь;
+        /// Передаем положительный радиус;
+        /// </summary>
+        [Test]
+        public void RadiusAndAreaTest_PositiveRadius()
+        {
+            var circle = new Circle(1);
+            Assert.AreEqual(1, circle.Radius, 0.001);
+            Assert.AreEqual(Math.PI*1, circle.Area, 0.001);
+        }
+        
+        /// <summary>
+        /// Тестирует радиус и площадь;
+        /// Передаем нулевой радиус;
+        /// </summary>
+        [Test]
+        public void RadiusAndAreaTest_ZeroRadius()
+        {
+            var circle = new Circle(0);
+            Assert.AreEqual(0, circle.Radius, 0.001);
+            Assert.AreEqual(0, circle.Area, 0.001);
         }
     }
 }
