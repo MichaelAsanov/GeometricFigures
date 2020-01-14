@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework;
 
 namespace Figures.Test
@@ -18,6 +19,20 @@ namespace Figures.Test
             Assert.DoesNotThrow(() =>
             {
                 var circle = new Circle(1);
+            });
+        }
+        
+        /// <summary>
+        /// Тестирует конструктор;
+        /// Передаем отрицательный радиус;
+        /// Ожидаем, что произошло исключение
+        /// </summary>
+        [Test]
+        public void ConstructorTest_NegativeRadius_Exception()
+        {
+            Assert.Throws<ArgumentException>(() =>
+            {
+                var circle = new Circle(-1);
             });
         }
     }
