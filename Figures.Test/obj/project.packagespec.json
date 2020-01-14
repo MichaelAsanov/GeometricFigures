@@ -18,7 +18,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\Михаил\\RiderProjects\\Figures\\Figures\\Figures.csproj": {
+            "projectPath": "C:\\Users\\Михаил\\RiderProjects\\Figures\\Figures\\Figures.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
