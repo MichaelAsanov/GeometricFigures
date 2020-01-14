@@ -10,6 +10,21 @@ namespace Figures
     {
         public Triangle(double a, double b, double c)
         {
+            CheckAllSidesAreNonNegative(a, b, c);
+            CheckTriangleInequality(a, b, c);
+            
+            (A, B, C) = (a, b, c);
+        }
+
+        /// <summary>
+        /// Проверка, что все стороны неотрицательны
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="c"></param>
+        /// <exception cref="NegativeArgumentException"></exception>
+        private void CheckAllSidesAreNonNegative(double a, double b, double c)
+        {
             if (a < 0 || b < 0 || c < 0)
             {
                 throw new NegativeArgumentException($"Переданы отрицательные стороны: " +
@@ -18,12 +33,16 @@ namespace Figures
                                                     (c < 0 ? $"{nameof(c)} = {c}. " : string.Empty) +
                                                     $"Стороны треугольника не могут быть отрицательными");
             }
-
-            CheckExistsByTriangleInequality(a, b, c);
-            (A, B, C) = (a, b, c);
         }
-
-        private void CheckExistsByTriangleInequality(double a, double b, double c)
+        
+        /// <summary>
+        /// Проверка неравенства треугольника
+        /// </summary>
+        /// <param name="a">Первая сторона</param>
+        /// <param name="b">Вторая сторона</param>
+        /// <param name="c">Третья сторона</param>
+        /// <exception cref="NegativeArgumentException"></exception>
+        private void CheckTriangleInequality(double a, double b, double c)
         {
             bool noncompliance1 = a > b + c;
             bool noncompliance2 = b > a + c;
