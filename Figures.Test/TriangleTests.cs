@@ -139,7 +139,7 @@ namespace Figures.Test
             {
                 var triangle = new Triangle(3, 1, 1);
             });
-            Assert.AreEqual("Нарушение неравенства треугольника: a > b + c. Каждая сторона треугольника должна быть меньше суммы двух других сторон.", exception.Message);
+            Assert.AreEqual("Нарушение неравенства треугольника: a > b + c. Каждая сторона треугольника должна быть не больше суммы двух других сторон.", exception.Message);
         }
         
         /// <summary>
@@ -153,7 +153,7 @@ namespace Figures.Test
             {
                 var triangle = new Triangle(1, 3, 1);
             });
-            Assert.AreEqual("Нарушение неравенства треугольника: b > a + c. Каждая сторона треугольника должна быть меньше суммы двух других сторон.", exception.Message);
+            Assert.AreEqual("Нарушение неравенства треугольника: b > a + c. Каждая сторона треугольника должна быть не больше суммы двух других сторон.", exception.Message);
         }
         
         /// <summary>
@@ -167,7 +167,7 @@ namespace Figures.Test
             {
                 var triangle = new Triangle(1, 1, 3);
             });
-            Assert.AreEqual("Нарушение неравенства треугольника: c > a + b. Каждая сторона треугольника должна быть меньше суммы двух других сторон.", exception.Message);
+            Assert.AreEqual("Нарушение неравенства треугольника: c > a + b. Каждая сторона треугольника должна быть не больше суммы двух других сторон.", exception.Message);
         }
         
         /// <summary>

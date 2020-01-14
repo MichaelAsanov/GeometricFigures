@@ -54,7 +54,7 @@ namespace Figures
                                                     (noncompliance1 ? $"{nameof(a)} > {nameof(b)} + {nameof(c)}. " : string.Empty) +
                                                     (noncompliance2 ? $"{nameof(b)} > {nameof(a)} + {nameof(c)}. " : string.Empty) +
                                                     (noncompliance3 ? $"{nameof(c)} > {nameof(a)} + {nameof(b)}. " : string.Empty) +
-                                                    "Каждая сторона треугольника должна быть меньше суммы двух других сторон." 
+                                                    "Каждая сторона треугольника должна быть не больше суммы двух других сторон." 
                                                    );
             }
         }
