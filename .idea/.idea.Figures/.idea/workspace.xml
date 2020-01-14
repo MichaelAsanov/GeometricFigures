@@ -28,8 +28,8 @@
         <option value="$PROJECT_DIR$/Figures/Exceptions/TriangleInequalityException.cs" />
         <option value="$PROJECT_DIR$/Figures/Circle.cs" />
         <option value="$PROJECT_DIR$/Figures.Test/CircleTests.cs" />
-        <option value="$PROJECT_DIR$/Figures.Test/TriangleTests.cs" />
         <option value="$PROJECT_DIR$/Figures/Triangle.cs" />
+        <option value="$PROJECT_DIR$/Figures.Test/TriangleTests.cs" />
       </list>
     </option>
   </component>
@@ -67,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579017864305</updated>
-      <workItem from="1579017866391" duration="8643000" />
+      <workItem from="1579017866391" duration="9653000" />
     </task>
     <servers />
   </component>

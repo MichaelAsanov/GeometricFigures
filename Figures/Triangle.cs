@@ -19,6 +19,7 @@ namespace Figures
                                                     $"Стороны треугольника не могут быть отрицательными");
             }
 
+            CheckExistsByTriangleInequality(a, b, c);
             (A, B, C) = (a, b, c);
         }
 
