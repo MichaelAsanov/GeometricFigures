@@ -14,14 +14,18 @@
     <setting file="file://$PROJECT_DIR$/Figures/Circle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Figures.Test/CircleTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Figures/Figure.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Figures/Triangle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Figures.Test/TriangleTests.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Figures.Test/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/Figures/Figure.cs" />
-        <option value="$PROJECT_DIR$/Figures.Test/CircleTests.cs" />
         <option value="$PROJECT_DIR$/Figures/Circle.cs" />
+        <option value="$PROJECT_DIR$/Figures/Triangle.cs" />
+        <option value="$PROJECT_DIR$/Figures.Test/CircleTests.cs" />
+        <option value="$PROJECT_DIR$/Figures.Test/TriangleTests.cs" />
       </list>
     </option>
   </component>
@@ -59,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579017864305</updated>
-      <workItem from="1579017866391" duration="4105000" />
+      <workItem from="1579017866391" duration="5241000" />
     </task>
     <servers />
   </component>

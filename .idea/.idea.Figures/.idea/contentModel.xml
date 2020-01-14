@@ -23,6 +23,7 @@
             </e>
           </e>
         </e>
+        <e p="Triangle.cs" t="Include" />
       </e>
       <e p="Figures.sln" t="IncludeFlat" />
       <e p="Figures.Test" t="IncludeRecursive">
@@ -36,6 +37,7 @@
             </e>
           </e>
         </e>
+        <e p="TriangleTests.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>

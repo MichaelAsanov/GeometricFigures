@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace Figures.Test
 {
     /// <summary>
-    /// Тестовый класс для класса <see cref="Circle"/> 
+    /// Тесты класса<see cref="Circle"/> 
     /// </summary>
     public class CircleTests
     {
