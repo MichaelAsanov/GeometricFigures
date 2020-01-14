@@ -26,10 +26,10 @@
         <option value="$PROJECT_DIR$/Figures/Figure.cs" />
         <option value="$PROJECT_DIR$/Figures/Exceptions/NegativeArgumentException.cs" />
         <option value="$PROJECT_DIR$/Figures/Exceptions/TriangleInequalityException.cs" />
-        <option value="$PROJECT_DIR$/Figures.Test/CircleTests.cs" />
         <option value="$PROJECT_DIR$/Figures/Circle.cs" />
         <option value="$PROJECT_DIR$/Figures/Triangle.cs" />
         <option value="$PROJECT_DIR$/Figures.Test/TriangleTests.cs" />
+        <option value="$PROJECT_DIR$/Figures.Test/CircleTests.cs" />
       </list>
     </option>
   </component>
@@ -44,6 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.C#" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -67,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579017864305</updated>
-      <workItem from="1579017866391" duration="14729000" />
+      <workItem from="1579017866391" duration="15614000" />
     </task>
     <servers />
   </component>
@@ -176,6 +177,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579017941458" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1579036993217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579036993217" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1579021596063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -62,7 +62,7 @@ namespace Figures.Test
         {
             var circle = new Circle(1);
             Assert.AreEqual(1, circle.Radius, 0.001);
-            Assert.AreEqual(Math.PI*1, circle.Area, 0.001);
+            Assert.AreEqual(Math.PI * 1, circle.Area, 0.001);
         }
         
         /// <summary>
